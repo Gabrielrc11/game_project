@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collected: {fileID: 2336552002107033421}
+  Score: 10
 --- !u!1001 &378228987547261291
 PrefabInstance:
   m_ObjectHideFlags: 0

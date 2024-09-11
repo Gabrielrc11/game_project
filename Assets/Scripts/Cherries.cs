@@ -8,6 +8,7 @@ public class Cherries : MonoBehaviour
     private CircleCollider2D circle;
 
     public GameObject collected;
+    public int Score;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,8 @@ public class Cherries : MonoBehaviour
             sr.enabled = false;
             circle.enabled = false;
             collected.SetActive(true);
+            GameController.instance.totalScore += Score;
+            GameController.instance.UpdateScoreText();
             Destroy(gameObject, 0.3f);
         }
     }
