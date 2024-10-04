@@ -38,4 +38,9 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(lvlName);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
